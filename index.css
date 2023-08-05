@@ -1,0 +1,23 @@
+body{
+    background-image:url('./images/bg_1.png');
+    background-size: cover;
+    margin: 0px;
+
+}
+
+#aaaa{
+    text-align: center;
+    color:white;
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+div{
+    align-items: center;
+    background-color: red;
+    margin-top: 0px; margin-left: 0px;
+    padding-left: 0px;
+}
+
