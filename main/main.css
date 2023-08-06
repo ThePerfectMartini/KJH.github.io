@@ -21,3 +21,10 @@ nav, footer {
     align-items: center;
     justify-content: center;
 }
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
