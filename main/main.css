@@ -28,3 +28,11 @@ nav, footer {
     align-items: center;
     justify-content: center;
 }
+
+.section_1 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
