@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rubato Studio</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="temp.css" />
 </head>
-<nav>
-    <a href="../index.html" style="font-size:xx-large;">Rubato Studio</a>         
-    <a href="home.html">Home</a>
-    <a href="studio.html">Studio</a>
-    <a href="works.html">Examples</a>
-    <a href="works.html">Works</a>
-    <a href="contact.html">Contact</a>
-</nav>
-<body>
-    <div class="content" style="background-color: aquamarine;">
-        <div style="width: 20vw; background-color: blueviolet;">사이드1</div>
 
-        <div class="main" style="background-color: darkgrey;">
-            <div style="width: 60vw; height: 80vh;">본문</div>
+<body>
+    <div class="main_content">
+        <div class="top_banner">
+            <div class="test">
+                <b class="rubato_font">Rubato<br>Studio</b>
+            </div>
+            <div class="gradation_bar"></div>
         </div>
-        
-        <div style="width: 20vw; background-color: blue;">사이드2</div>
+        <div class="main_para">
+            <div class="about_rubato">
+                <h1>Rubato Studio</h1>
+                <div>
+                    당신의 작품에<br>어울리는<br>당신만의<br>오리지널 음악
+                </div>
+            </div>
+        </div>
+        <div class="main_para">
+            <div class="about_rubato">
+                <h1>제작 과정</h1>
+                <div>
+                    루바토는<br>혼자 만들지<br>않습니다<br>당신과 함께
+                </div>
+            </div>
+        </div>
+        <script>
+
+            let observer = new IntersectionObserver((e) => {
+                e.forEach ((box) => {
+                    if (box.isIntersecting){
+                        setTimeout(()=>{
+                            box.target.style.opacity = 1;
+                        },500);
+                    }
+                })
+            })
+            let div = document.querySelectorAll('.about_rubato') 
+            let main = document.querySelectorAll('.test') 
+
+            observer.observe(div[0])
+            observer.observe(div[1])
+            observer.observe(main[0])
+
+        </script>
     </div>
 </body>
 
-<footer>
-    <a>Studio Rubato</a>
-    <a>TEL : 000 - 0000 - 0000</a>
-    <a>Email : nnnn@nnnnn.nnn</a>
-</footer>
+
 </html>
